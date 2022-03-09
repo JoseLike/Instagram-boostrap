@@ -14,6 +14,7 @@
 </head>
 
 <body class="bg-light">
+    <!-- NAVBAR -->
     <nav class="navbar navbar-light bg-light border-bottom">
         <div class="container align-baseline">
             <a class="navbar-brand " href="#"><i class="bi bi-instagram"></i></i>
@@ -54,72 +55,76 @@
             </div>
         </div>
     </div>
-    <section id="styles-view">
-        <div class="container-fluid bg-white p-2 ">
-            <ul class="nav nav-pills justify-content-center">
-                <li class="active">
-                    <a data-toggle="pill" href="#images">
-                        <i class="bi bi-grid-3x3-gap-fill btn-outline-secondary rounded me-2"></i>
-                    </a>
-                </li>
-                <li>
-                    <a data-toggle="pill" href="#posts">
-                        <i class="bi bi-stop-fill btn-outline-secondary rounded"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section id=" contenido">
+    <!-- BOTONES VIEW PILLS -->
+    <div class="container-fluid bg-white p-2 ">
+        <ul class="nav nav-pills justify-content-center" id="mypills" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="images-pill" data-bs-toggle="pill" data-bs-target="#images" type="button" role="tab" aria-controls="home" aria-selected="true"><i
+                class="bi bi-grid-3x3-gap-fill btn-outline-secondary rounded me-2"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="posts-pill" data-bs-toggle="pill" data-bs-target="#posts" type="button" role="tab" aria-controls="profile" aria-selected="false"><li><i class="bi bi-stop-fill btn-outline-secondary rounded"></i></button>
+            </li>
+          </ul>
+        <!-- BODY DE POSTS INDIVIDULAES -->
         <div class="tab-content">
-                <div class="container p-3" id="posts" class="tab-pane fade in active">
-                    <div class="row">
-                        <div class="col justify-content-center">
-                            <div class="card m-4">
-                                <div class="top d-flex justify-content-between m-2">
-                                    <h5 class="card-title ">Titulo del Post</h5>
-                                    <h5 class="card-date ">12/12</h5>
-                                </div>
-                                <img id="images" src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/609cf90e5bafe89d454761e7/cachorro-jack-russell_0.jpg"
-                                    class="card-img-bottom" alt="imagen de un perro">
-                                <div class="card-body">
-                                    <p class="card-likes">12 Likes</p>
-                                    <p class="card-description">Descripcion</p>
-                                    <div class="d-flex">
-                                        <i class="bi bi-heart me-2"></i>
-                                        <input class="form-control form-control-sm border border-0" type="text"
-                                            placeholder="Comment..." aria-label=".form-control-sm example">
-                                        <i class="bi bi-three-dots-vertical float-end"></i>
-                                    </div>
+            <div id="posts" class="tab-pane active">
+                <div class="row">
+                    <div class="col justify-content-center">
+                        <div class="card m-4">
+                            <div class="top d-flex justify-content-between m-2">
+                                <h5 class="card-title ">Titulo del Post</h5>
+                                <h5 class="card-date ">12/12</h5>
+                            </div>
+                            <img src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/609cf90e5bafe89d454761e7/cachorro-jack-russell_0.jpg"
+                                class="card-img-bottom" alt="imagen de un perro">
+                            <div class="card-body">
+                                <p class="card-likes">12 Likes</p>
+                                <p class="card-description">Descripcion</p>
+                                <div class="d-flex">
+                                    <i class="bi bi-heart me-2"></i>
+                                    <input class="form-control form-control-sm border border-0" type="text"
+                                        placeholder="Comment..." aria-label=".form-control-sm example">
+                                    <i class="bi bi-three-dots-vertical float-end"></i>
                                 </div>
                             </div>
-                            <div class="card m-4">
-                                <div class="top d-flex justify-content-between m-2">
-                                    <h5 class="card-title ">Titulo del Post</h5>
-                                    <h5 class="card-date ">12/12</h5>
-                                </div>
-                                <img id="images" src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/609cf90e5bafe89d454761e7/cachorro-jack-russell_0.jpg"
-                                    class="card-img-bottom" alt="imagen de un perro">
-                                <div class="card-body">
-                                    <p class="card-likes">12 Likes</p>
-                                    <p class="card-description">Descripcion</p>
-                                    <div class="d-flex">
-                                        <i class="bi bi-heart me-2"></i>
-                                        <input class="form-control form-control-sm border border-0" type="text"
-                                            placeholder="Comment..." aria-label=".form-control-sm example">
-                                        <i class="bi bi-three-dots-vertical float-end"></i>
-                                    </div>
+                        </div>
+                        <div class="card m-4">
+                            <div class="top d-flex justify-content-between m-2">
+                                <h5 class="card-title ">Titulo del Post</h5>
+                                <h5 class="card-date ">12/12</h5>
+                            </div>
+                            <img src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/609cf90e5bafe89d454761e7/cachorro-jack-russell_0.jpg"
+                                class="card-img-bottom" alt="imagen de un perro">
+                            <div class="card-body">
+                                <p class="card-likes">12 Likes</p>
+                                <p class="card-description">Descripcion</p>
+                                <div class="d-flex">
+                                    <i class="bi bi-heart me-2"></i>
+                                    <input class="form-control form-control-sm border border-0" type="text"
+                                        placeholder="Comment..." aria-label=".form-control-sm example">
+                                    <i class="bi bi-three-dots-vertical float-end"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- GRID DE IMAGENES -->
+            <div id="images" class="tab-pane">
+                <div clas="d-flex row">
+                    <div class="col">
+                        <img src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/609cf90e5bafe89d454761e7/cachorro-jack-russell_0.jpg"
+                            alt="imagen de un perro">
+                        <div class="col">
+                            <img src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/609cf90e5bafe89d454761e7/cachorro-jack-russell_0.jpg"
+                                alt="imagen de un perro">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <section id="images-view">
-        <div class="tab-content">
-    </section>
-
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
