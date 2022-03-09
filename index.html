@@ -58,12 +58,12 @@
         <div class="container-fluid bg-white p-2 ">
             <ul class="nav nav-pills justify-content-center">
                 <li class="active">
-                    <a data-toggle="pill" href="#home">
+                    <a data-toggle="pill" href="#images">
                         <i class="bi bi-grid-3x3-gap-fill btn-outline-secondary rounded me-2"></i>
                     </a>
                 </li>
                 <li>
-                    <a data-toggle="pill" href="#menu1">
+                    <a data-toggle="pill" href="#posts">
                         <i class="bi bi-stop-fill btn-outline-secondary rounded"></i>
                     </a>
                 </li>
@@ -71,29 +71,49 @@
         </div>
     </section>
     <section id=" contenido">
-        <div class="container p-3">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <div class="card">
-                        <div class="top d-flex justify-content-between m-2">
-                            <h5 class="card-title ">Titulo del Post</h5>
-                            <h5 class="card-date ">12/12</h5>
-                        </div>
-                        <img src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/609cf90e5bafe89d454761e7/cachorro-jack-russell_0.jpg"
-                            class="card-img-bottom" alt="imagen de un perro">
-                        <div class="card-body">
-                            <p class="card-likes">12 Likes</p>
-                            <p class="card-description">Descripcion</p>
-                            <div class="d-flex">
-                                <i class="bi bi-heart me-2"></i>
-                                <input class="form-control form-control-sm border border-0" type="text"
-                                    placeholder="Comment..." aria-label=".form-control-sm example">
-                                <i class="bi bi-three-dots-vertical float-end"></i>
+        <div class="tab-content">
+                <div class="container p-3" id="posts" class="tab-pane fade in active">
+                    <div class="row">
+                        <div class="col justify-content-center">
+                            <div class="card m-4">
+                                <div class="top d-flex justify-content-between m-2">
+                                    <h5 class="card-title ">Titulo del Post</h5>
+                                    <h5 class="card-date ">12/12</h5>
+                                </div>
+                                <img id="images" src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/609cf90e5bafe89d454761e7/cachorro-jack-russell_0.jpg"
+                                    class="card-img-bottom" alt="imagen de un perro">
+                                <div class="card-body">
+                                    <p class="card-likes">12 Likes</p>
+                                    <p class="card-description">Descripcion</p>
+                                    <div class="d-flex">
+                                        <i class="bi bi-heart me-2"></i>
+                                        <input class="form-control form-control-sm border border-0" type="text"
+                                            placeholder="Comment..." aria-label=".form-control-sm example">
+                                        <i class="bi bi-three-dots-vertical float-end"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card m-4">
+                                <div class="top d-flex justify-content-between m-2">
+                                    <h5 class="card-title ">Titulo del Post</h5>
+                                    <h5 class="card-date ">12/12</h5>
+                                </div>
+                                <img id="images" src="https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/609cf90e5bafe89d454761e7/cachorro-jack-russell_0.jpg"
+                                    class="card-img-bottom" alt="imagen de un perro">
+                                <div class="card-body">
+                                    <p class="card-likes">12 Likes</p>
+                                    <p class="card-description">Descripcion</p>
+                                    <div class="d-flex">
+                                        <i class="bi bi-heart me-2"></i>
+                                        <input class="form-control form-control-sm border border-0" type="text"
+                                            placeholder="Comment..." aria-label=".form-control-sm example">
+                                        <i class="bi bi-three-dots-vertical float-end"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
     <section id="images-view">
