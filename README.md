@@ -15,6 +15,14 @@ Creando una landing page similar a Instagram usando solamente Boostrap.
 * [CSS3]
 * [Bootstrap v5.1.3](https://getbootstrap.com/) - Libreria para el diseño del HTML e iconos.
 
+## Deployment
+
+Para lanzar este proyecto introducir en la consola:
+
+```bash
+  pip3 install flask && python server.py
+```
+
 
 ## Estructura y explicación del codigo ⚙️
 
